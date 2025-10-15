@@ -1,3 +1,5 @@
+const path = require('path');
+
 exports.config = {
     //
     // ====================
@@ -23,6 +25,7 @@ exports.config = {
     //
     specs: [
         // ToDo: define location for spec files here
+        './test/specs/**/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -51,12 +54,11 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        // capabilities for local Appium web tests on an Android Emulator
-        platformName: 'Android',
-        browserName: 'Chrome',
-        'appium:deviceName': 'Android GoogleAPI Emulator',
+        'appium:platformName': 'Android',
         'appium:platformVersion': '12.0',
-        'appium:automationName': 'UiAutomator2'
+        'appium:deviceName': 'Pixel_6',
+        'appium:automationName': 'UIAutomator2',
+        'appium:app': path.join(process.cwd(), 'app/android/ApiDemos-debug.apk')
     }],
 
     //
@@ -115,7 +117,7 @@ exports.config = {
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
     framework: 'mocha',
-    
+
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
