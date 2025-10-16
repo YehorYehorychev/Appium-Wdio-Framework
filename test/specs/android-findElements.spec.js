@@ -22,4 +22,12 @@ describe('Android Elements Test', () => {
         const actionBar = await $('~Action Bar');
         await expect(actionBar).toBeDisplayed();
     });
+
+    it('Find element by class name', async () => {
+        const className = await $('android.widget.TextView');
+
+        console.log(await className.getText());
+
+        await expect(className).toHaveText("API Demos");
+    })
 });
