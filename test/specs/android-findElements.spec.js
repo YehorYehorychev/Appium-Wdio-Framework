@@ -81,8 +81,23 @@ describe('Android Elements Test', () => {
         await expect(actualList).toEqual(expectedList);
     });
 
-    it.only('Find element using UIAutomator', async () => {
-        // Find by text contains
-        await $('android=new UiSelector().textContains("Alert")').click();
+    it.only('Working with text field', async () => {
+        const views = await $('~Views');
+        await views.waitForDisplayed({ timeout: 5000 });
+        await views.click();
+
+        const autoComplete = await $('//android.widget.TextView[@content-desc="Auto Complete"]');
+        await autoComplete.waitForDisplayed({ timeout: 5000 });
+        await autoComplete.click();
+
+        const screenTop = await $('//android.widget.TextView[@content-desc="1. Screen Top"]');
+        await screenTop.waitForDisplayed({ timeout: 5000 });
+        await screenTop.click();
+
+        const textField = await $('//android.widget.AutoCompleteTextView[@resource-id="io.appium.android.apis:id/edit"]');
+        await textField.waitForDisplayed({ timeout: 5000 });
+
+        await textField.addValue('Mountain View');
+        await expect(textField).toHaveText('Mountain View');
     });
 });
