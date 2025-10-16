@@ -53,4 +53,36 @@ describe('Android Elements Test', () => {
         // Find by text contains
         await $('android=new UiSelector().textContains("Alert")').click();
     });
+
+    it('Find multiple elements', async () => {
+        const expectedList = [
+            'API Demos',
+            'Accessibility',
+            'Animation',
+            'App',
+            'Content',
+            'Graphics',
+            'Media',
+            'NFC',
+            'OS',
+            'Preference',
+            'Text',
+            'Views'
+        ];
+        const actualList = [];
+
+        const textList = await $$('android.widget.TextView');
+
+        for (const element of textList) {
+            const text = await element.getText();
+            actualList.push(text);
+        }
+
+        await expect(actualList).toEqual(expectedList);
+    });
+
+    it.only('Find element using UIAutomator', async () => {
+        // Find by text contains
+        await $('android=new UiSelector().textContains("Alert")').click();
+    });
 });
