@@ -25,9 +25,27 @@ describe('Android Elements Test', () => {
 
     it('Find element by class name', async () => {
         const className = await $('android.widget.TextView');
-
-        console.log(await className.getText());
-
         await expect(className).toHaveText("API Demos");
-    })
+    });
+
+    it('Find element by xpath', async () => {
+        // XPath locator for "Alert Dialogs"
+        const alertDialogsBtn = await $('//android.widget.TextView[@content-desc="Alert Dialogs"]');
+        await alertDialogsBtn.waitForDisplayed({ timeout: 5000 });
+        await alertDialogsBtn.click();
+
+        // Resource ID locator for "List dialog" button
+        const listDialogBtn = await $('//android.widget.Button[@resource-id="io.appium.android.apis:id/select_button"]');
+        await listDialogBtn.waitForDisplayed({ timeout: 5000 });
+        await listDialogBtn.click();
+
+        // Locate "Command two" option by text
+        const commandTwoBtn = await $('//android.widget.TextView[@text="Command two"]');
+        await commandTwoBtn.waitForDisplayed({ timeout: 5000 });
+        await commandTwoBtn.click();
+
+        // Assertion
+        const textAssertion = await $('android.widget.TextView');
+        await expect(textAssertion).toHaveText('You selected: 1 , Command two');
+    });
 });
