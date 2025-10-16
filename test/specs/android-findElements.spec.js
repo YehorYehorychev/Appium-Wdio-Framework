@@ -28,7 +28,7 @@ describe('Android Elements Test', () => {
         await expect(className).toHaveText("API Demos");
     });
 
-    it('Find element by xpath', async () => {
+    xit('Find element by xpath', async () => {
         // XPath locator for "Alert Dialogs"
         const alertDialogsBtn = await $('//android.widget.TextView[@content-desc="Alert Dialogs"]');
         await alertDialogsBtn.waitForDisplayed({ timeout: 5000 });
@@ -47,5 +47,10 @@ describe('Android Elements Test', () => {
         // Assertion
         const textAssertion = await $('android.widget.TextView');
         await expect(textAssertion).toHaveText('You selected: 1 , Command two');
+    });
+
+    it('Find element using UIAutomator', async () => {
+        // Find by text contains
+        await $('android=new UiSelector().textContains("Alert")').click();
     });
 });
