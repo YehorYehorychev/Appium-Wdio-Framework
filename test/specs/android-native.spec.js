@@ -20,19 +20,9 @@ describe('Android Native Features Test', () => {
 
         await driver.pause(3000);
 
-        driver.acceptAlert();
-
-        await expect($('//*[@resource-id="android:id/alertTitle"]')).not.toExist();
-    });
-
-    it('Working with dialog boxes', async () => {
-        const alertBtn = await $('~OK Cancel dialog with a message');
-        alertBtn.waitForDisplayed({ timeout: 5000 });
-        alertBtn.click();
-
-        await driver.pause(3000);
-
-        driver.acceptAlert();
+        // driver.acceptAlert();
+        // driver.dismissAlert();
+        await $('//android.widget.Button[@resource-id="android:id/button1"]').click();
 
         await expect($('//*[@resource-id="android:id/alertTitle"]')).not.toExist();
     });
