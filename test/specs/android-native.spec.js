@@ -26,4 +26,18 @@ describe('Android Native Features Test', () => {
 
         await expect($('//*[@resource-id="android:id/alertTitle"]')).not.toExist();
     });
+
+    it.only('Vertical Scrilling', async () => {
+        await $('~App').click();
+        await $('~Activity').click();
+
+        // Scroll to the end (not stable if the element gets moved)
+        // await $('android=new UiScrollable(new UiSelector().scrollable(true)).scrollToEnd(1,5)'); // Scroll 1 time, speed is 5
+
+        // scrollTextIntoView -> (More stable)
+        await $('android=new UiScrollable(new UiSelector().scrollable(true)).scrollTextIntoView("Secure Surfaces")').click();
+        // await $('~Secure Surfaces').click();
+
+        await expect($('~Secure Dialog')).toExist();
+    });
 });
