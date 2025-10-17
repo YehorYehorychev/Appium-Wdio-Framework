@@ -27,7 +27,7 @@ describe('Android Native Features Test', () => {
         await expect($('//*[@resource-id="android:id/alertTitle"]')).not.toExist();
     });
 
-    it.only('Vertical Scrilling', async () => {
+    it('Vertical Scrolling', async () => {
         await $('~App').click();
         await $('~Activity').click();
 
@@ -36,8 +36,20 @@ describe('Android Native Features Test', () => {
 
         // scrollTextIntoView -> (More stable)
         await $('android=new UiScrollable(new UiSelector().scrollable(true)).scrollTextIntoView("Secure Surfaces")').click();
+
         // await $('~Secure Surfaces').click();
 
         await expect($('~Secure Dialog')).toExist();
+    });
+
+    it.only('Horizontal Scrolling', async () => {
+        await driver.startActivity(
+            "io.appium.android.apis",
+            "io.appium.android.apis.view.Gallery1");
+
+        // Horizontal scrolling
+        await $('android=new UiScrollable(new UiSelector().scrollable(true)).setAsHorizontalList().scrollForward()');
+
+        await driver.pause(3000);
     });
 });
