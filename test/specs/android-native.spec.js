@@ -42,7 +42,7 @@ describe('Android Native Features Test', () => {
         await expect($('~Secure Dialog')).toExist();
     });
 
-    it.only('Horizontal Scrolling', async () => {
+    it('Horizontal Scrolling', async () => {
         await driver.startActivity(
             "io.appium.android.apis",
             "io.appium.android.apis.view.Gallery1");
@@ -51,5 +51,24 @@ describe('Android Native Features Test', () => {
         await $('android=new UiScrollable(new UiSelector().scrollable(true)).setAsHorizontalList().scrollForward()');
 
         await driver.pause(3000);
+    });
+
+    it.only('E2E Scrolling Test', async () => {
+        await driver.startActivity(
+            "io.appium.android.apis",
+            "io.appium.android.apis.view.DateWidgets1");
+
+        const date = await $('//*[@resource-id="io.appium.android.apis:id/dateDisplay"]');
+        const currentDate = await date.getText();
+
+        await $('~change the date').click();
+
+        // Horizontal scrolling
+        await $('android=new UiScrollable(new UiSelector().scrollable(true)).setAsHorizontalList().scrollForward()');
+        await $('//*[@text="10"]').click();
+
+        await $('//*[@resource-id="android:id/button1"]').click();
+
+        await expect(await date.getText()).not.toEqual(currentDate);
     });
 });
