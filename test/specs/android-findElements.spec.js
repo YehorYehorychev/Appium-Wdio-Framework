@@ -3,7 +3,6 @@
  * It groups related tests together under one description.
  */
 describe('Android Elements Test', () => {
-
     /**
      * it() defines a single Test Case inside the suite.
      * Each "it" block should describe one specific behavior or user flow.
