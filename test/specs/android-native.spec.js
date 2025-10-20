@@ -53,7 +53,7 @@ describe('Android Native Features Test', () => {
         await driver.pause(3000);
     });
 
-    it.only('E2E Scrolling Test', async () => {
+    it('E2E Scrolling Test', async () => {
         await driver.startActivity(
             "io.appium.android.apis",
             "io.appium.android.apis.view.DateWidgets1");
