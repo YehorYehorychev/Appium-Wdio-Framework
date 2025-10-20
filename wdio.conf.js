@@ -25,7 +25,7 @@ exports.config = {
     //
     specs: [
         // ToDo: define location for spec files here
-        './test/specs/**/android-native*.js'
+        './test/specs/android/*.js'
     ],
     // Patterns to exclude.
     exclude: [
