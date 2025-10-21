@@ -4,4 +4,16 @@ describe('iOS Find Element', () => {
         await $('~Simple').click();
         await expect(await driver.getAlertText()).toContain("A Short Title Is Best");
     });
+
+    it('find by tag name', async () => {
+        // single element
+        console.log(await $('XCUIElementTypeStaticText').getText());
+
+        // multiple elements
+        const textEls = await $$('XCUIElementTypeStaticText');
+
+        for (const element of textEls) {
+            console.log(await element.getText());
+        }
+    });
 });
