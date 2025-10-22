@@ -44,7 +44,7 @@ describe('iOS Find Element', () => {
         await expect(await driver.getAlertText()).toContain("A Short Title Is Best");
     });
 
-    it('Exercise: Enter text in the search field', async () => {
+    it('Enter text in the search field', async () => {
         await $('~Search').click();
         await $('~Default').click();
         await $('//XCUIElementTypeSearchField').addValue("I love this course!");
