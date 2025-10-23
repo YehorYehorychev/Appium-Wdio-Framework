@@ -15,7 +15,7 @@ describe('iOS Native Features', () => {
         await expect($('~OK')).not.toExist();
     });
 
-    it('Working with Scrollable elements', async () => {
+    it.only('Working with Scrollable elements', async () => {
         // easiest
         // await driver.execute('mobile: scroll', { direction: "down" });
         // await driver.execute('mobile: scroll', { direction: "up" });
@@ -32,7 +32,7 @@ describe('iOS Native Features', () => {
         await driver.pause(2000);
     });
 
-    it.only('Working with Picker view', async () => {
+    it('Working with Picker view', async () => {
         await $('~Picker View').click();
 
         const redPicker = await $('~Red color component value');
