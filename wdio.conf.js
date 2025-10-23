@@ -25,7 +25,7 @@ exports.config = {
     //
     specs: [
         // ToDo: define location for spec files here
-        './test/specs/ios/ios.spec.js'
+        './test/specs/**/*ios*screen*.spec.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -67,7 +67,7 @@ exports.config = {
             "appium:platformVersion": "18.1",
             "appium:deviceName": "iPhone 16 Pro Max",
             "appium:automationName": "XCUITest",
-            "appium:app": path.join(process.cwd(), "./app/ios/UIKitCatalog.app"),
+            "appium:app": path.join(process.cwd(), "./app/ios/MVCTodo.app"),
         }
     ],
 
