@@ -37,5 +37,5 @@ class AddNoteScreen {
     }
 }
 
-module.exports = new AddNoteScreen(); // These screen objects/elements can be visible and callable from the any class or file
-// export default new AddNoteScreen();
+// module.exports = new AddNoteScreen(); // These screen objects/elements can be visible and callable from the any class or file
+export default new AddNoteScreen(); // New approach

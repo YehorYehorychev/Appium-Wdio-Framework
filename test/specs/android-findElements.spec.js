@@ -27,7 +27,7 @@ describe('Android Elements Test', () => {
         await expect(className).toHaveText("API Demos");
     });
 
-    xit('Find element by xpath', async () => {
+    it('Find element by xpath', async () => {
         // XPath locator for "Alert Dialogs"
         const alertDialogsBtn = await $('//android.widget.TextView[@content-desc="Alert Dialogs"]');
         await alertDialogsBtn.waitForDisplayed({ timeout: 5000 });
