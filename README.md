@@ -1,7 +1,7 @@
 # 📱 Appium WDIO Framework
 
 A cross-platform **mobile test automation framework** built with **WebdriverIO (WDIO)** and **Appium**.  
-This project supports **Android** and **iOS** testing and follows a clear **Page Object Model (POM)** architecture for scalability and maintainability.
+This project supports **Android** and **iOS** testing and follows a clear **Page Object Model (POM)** architecture for scalability and maintainability. 
 
 ---
 
