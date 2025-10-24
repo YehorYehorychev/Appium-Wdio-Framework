@@ -1,0 +1,186 @@
+[90m2025-10-24T23:19:00.348Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m BrowserStack service started with id: 413c878f-f7db-4246-9d30-94088c5531b8
+[90m2025-10-24T23:19:00.348Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m _options data: {}
+[90m2025-10-24T23:19:00.348Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m webdriver capabilities data: [{"platformName":"Android","appium:platformVersion":"12.0","appium:deviceName":"Google Pixel 6","appium:automationName":"UIAutomator2","appium:app":"bs://9605c7e00c359dc03b21e58accccb9929060ab98","appium:autoGrantPermissions":true,"bstack:options":{"projectName":"Appium WDIO Framework","buildName":"Android Automation Build","sessionName":"Add Note Test","appiumVersion":"2.0.0","deviceOrientation":"portrait","networkLogs":true,"debug":true,"local":false}}]
+[90m2025-10-24T23:19:00.348Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m _config data: {"rootDir":"/Users/yehor/VSCodeProjects/appium-wdio-framework/config","specs":["/Users/yehor/VSCodeProjects/appium-wdio-framework/test/specs/android/add-note-screen.spec.js"],"suites":{},"exclude":[],"capabilities":[],"logLevel":"info","logLevels":{},"groupLogsByTestSpec":false,"excludeDriverLogs":[],"bail":0,"waitforInterval":100,"waitforTimeout":10000,"framework":"mocha","reporters":["spec"],"services":["browserstack"],"maxInstances":10,"maxInstancesPerCapability":100,"injectGlobals":true,"filesToWatch":[],"connectionRetryTimeout":120000,"connectionRetryCount":3,"execArgv":[],"runnerEnv":{"FORCE_COLOR":"1"},"runner":"local","shard":{"current":1,"total":1},"specFileRetries":0,"specFileRetriesDelay":0,"specFileRetriesDeferred":false,"autoAssertOnTestEnd":true,"reporterSyncInterval":100,"reporterSyncTimeout":5000,"cucumberFeaturesWithLineNumbers":[],"mochaOpts":{"timeout":60000,"ui":"bdd"},"jasmineOpts":{"defaultTimeoutInterval":10000},"cucumberOpts":{"timeout":10000},"onPrepare":[],"onWorkerStart":[],"onWorkerEnd":[],"before":[],"beforeSession":[],"beforeSuite":[],"beforeHook":[],"beforeTest":[],"beforeCommand":[],"afterCommand":[],"afterTest":[],"afterHook":[],"afterSuite":[],"afterSession":[],"after":[],"onComplete":[],"onReload":[],"beforeAssertion":[],"afterAssertion":[],"beforeFeature":[],"beforeScenario":[],"beforeStep":[],"afterStep":[],"afterScenario":[],"afterFeature":[],"_":["config/wdio.android.bs.conf.js","config/wdio.android.bs.conf.js"],"$0":"/Users/yehor/VSCodeProjects/appium-wdio-framework/node_modules/.bin/wdio","baseUrl":"http://localhost","user":"yehoryehorychev_av4Ic3","key":"9xTteycWJQSykDhsj5Qo"}
+[90m2025-10-24T23:19:00.349Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending SDK event with data {
+  userName: '[REDACTED]',
+  accessKey: '[REDACTED]',
+  event_type: 'SDKTestAttempted',
+  detectedFramework: 'WebdriverIO-mocha',
+  event_properties: {
+    sdkRunId: '413c878f-f7db-4246-9d30-94088c5531b8',
+    testhub_uuid: undefined,
+    language_framework: 'WebdriverIO_mocha',
+    referrer: 'WebdriverIO-mocha/9.19.2',
+    language: 'WebdriverIO',
+    languageVersion: 'v24.3.0',
+    buildName: 'Android Automation Build',
+    buildIdentifier: 'undefined',
+    os: 'Darwin',
+    hostname: 'Yehors-MacBook-Pro.local',
+    productMap: {
+      observability: true,
+      accessibility: null,
+      percy: false,
+      automate: true,
+      app_automate: false
+    },
+    product: [ 'observability', 'automate' ],
+    framework: 'mocha'
+  }
+}
+[90m2025-10-24T23:19:00.666Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Funnel Event Response: "{\"message\":\"SDK Event recorded successfully\"}"
+[90m2025-10-24T23:19:00.666Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Funnel event success
+[90m2025-10-24T23:19:00.666Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m app is not defined in browserstack-service config, skipping ...
+[90m2025-10-24T23:19:00.666Z[39m [33mWARN[39m [97m@wdio/browserstack-service[39m Accessibility Automation will run only on Chrome browsers.
+[90m2025-10-24T23:19:00.667Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending launch start event
+[90m2025-10-24T23:19:01.391Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m [Start_Build] Success response: {"observability":{"success":true,"options":{"allow_screenshots":true},"code":null,"errors":null,"error_trace_id":null},"accessibility":null,"automate":{"success":true,"options":{"allow_screenshots":true},"code":null,"errors":null,"error_trace_id":null},"turboscale":null,"build_hashed_id":"rwu9mzqvoanm01tbfdk4zlbgxdp8up45qdofs0h1","jwt":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiIxMDI2Nzk0NiIsImdyb3VwX2lkIjoxMDE3ODAxOCwidXNlcl9pZCI6MTAyNjc5NDYsImJ1aWxkX2hhc2hlZF9pZCI6InJ3dTltenF2b2FubTAxdGJmZGs0emxiZ3hkcDh1cDQ1cWRvZnMwaDEiLCJwcm9qZWN0X25hbWUiOiJBcHBpdW0gV0RJTyBGcmFtZXdvcmsiLCJob29rX2FzX3Rlc3QiOiIxIiwiYnVpbGRfbmFtZSI6IkFuZHJvaWQgQXV0b21hdGlvbiBCdWlsZCIsInByb2R1Y3RfbWFwIjoie1wib2JzZXJ2YWJpbGl0eVwiOnRydWUsXCJhdXRvbWF0ZVwiOnRydWUsXCJjYWRcIjp0cnVlLFwib3JpZ2luRnJvbVByb2R1Y3RNYXBcIjpcIkF1dG9tYXRlXCIsXCJic3RhY2tBdXRvbWF0aW9uXCI6dHJ1ZSxcIm5vblNES1wiOmZhbHNlLFwiYWNjZXNzaWJpbGl0eUF1dG9FbmFibGVkXCI6dHJ1ZX0iLCJncnJfcmVnaW9uIjoiIiwiaXNfbG93X3ZvbHVtZSI6ZmFsc2UsImlzX2xjbmNfZXZlbnQiOmZhbHNlLCJzaWduaW5nX2tleV9oYXNoIjoiMzdjMTEzMWU0YjJlNzQzYzc2NmUxZDcwYmY1ZjJiNTdkYzY5YjE5NWQzMDBlMzJhZThkMDIzMTIwYTRhNmQ5NyIsImlhdCI6MTc2MTM0Nzk0MSwiZXhwIjoxNzYxNjkzNTQxfQ.HLQuJ6G0bTClBccsdIvNkMH0d6WVAkFAEqaqefTi9FE","discard_build":null,"app_automate":null}
+[90m2025-10-24T23:19:01.391Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Testhub started with id: rwu9mzqvoanm01tbfdk4zlbgxdp8up45qdofs0h1
+[90m2025-10-24T23:19:01.393Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m browserstackLocal is not enabled - skipping...
+[90m2025-10-24T23:19:40.418Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Skipping method: Console, exists: true, type: function
+[90m2025-10-24T23:19:40.533Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Requesting Browserstack session URL at https://api-cloud.browserstack.com/app-automate/sessions/b43c1f003cef726bf605637be3386f02e41a0615.json
+[90m2025-10-24T23:19:40.881Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m  session: https://app-automate.browserstack.com/builds/c2a5de41acc8a8268245813837278c665a55f261/sessions/b43c1f003cef726bf605637be3386f02e41a0615
+[90m2025-10-24T23:19:40.887Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Update job with sessionId b43c1f003cef726bf605637be3386f02e41a0615
+[90m2025-10-24T23:19:40.887Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Updating Browserstack session at https://api-cloud.browserstack.com/app-automate/sessions/b43c1f003cef726bf605637be3386f02e41a0615.json with request body: 
+[90m2025-10-24T23:19:41.129Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Update job with sessionId b43c1f003cef726bf605637be3386f02e41a0615
+[90m2025-10-24T23:19:41.129Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Updating Browserstack session at https://api-cloud.browserstack.com/app-automate/sessions/b43c1f003cef726bf605637be3386f02e41a0615.json with request body: 
+[90m2025-10-24T23:19:41.388Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Driver capabilities used for integration object: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","goog:chromeOptions":{},"newCommandTimeout":0,"deviceName":"google pixel 6","chromedriverPorts":[[18100,18110]],"automationName":"uiautomator2","autoGrantPermissions":true,"bundleID":"com.socialnmobile.dictapps.notepad.color.note","bundleId":"com.socialnmobile.dictapps.notepad.color.note","skipServerInstallation":true,"udid":"26131FDF6007AM","appPackage":"com.socialnmobile.dictapps.notepad.color.note","appActivity":"com.socialnmobile.colornote.activity.Main","nativeWebScreenshot":true,"disableSuppressAccessibilityService":true,"platformVersion":"12.0","systemPort":8200,"chromedriverPort":18080,"chromedriverExecutable":"/usr/local/.browserstack/deps/chromedriver/v139.0.7258.154/chromedriver","suppressKillServer":true},"platformName":"Android","goog:chromeOptions":{},"newCommandTimeout":0,"deviceName":"26131FDF6007AM","chromedriverPorts":[[18100,18110]],"automationName":"uiautomator2","autoGrantPermissions":true,"bundleID":"com.socialnmobile.dictapps.notepad.color.note","bundleId":"com.socialnmobile.dictapps.notepad.color.note","skipServerInstallation":true,"udid":"26131FDF6007AM","appPackage":"com.socialnmobile.dictapps.notepad.color.note","appActivity":"com.socialnmobile.colornote.activity.Main","nativeWebScreenshot":true,"disableSuppressAccessibilityService":true,"platformVersion":"12","systemPort":8200,"chromedriverPort":18080,"chromedriverExecutable":"/usr/local/.browserstack/deps/chromedriver/v139.0.7258.154/chromedriver","suppressKillServer":true,"deviceUDID":"26131FDF6007AM","deviceApiLevel":31,"deviceScreenSize":"1080x2400","deviceScreenDensity":420,"deviceModel":"Pixel 6","deviceManufacturer":"Google","pixelRatio":2.625,"statBarHeight":124,"viewportRect":{"left":0,"top":124,"width":1080,"height":2116}}
+[90m2025-10-24T23:19:41.388Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m User capabilities used for integration object: {"platformName":"Android","appium:platformVersion":"12.0","appium:deviceName":"Google Pixel 6","appium:automationName":"UIAutomator2","appium:app":"bs://9605c7e00c359dc03b21e58accccb9929060ab98","appium:autoGrantPermissions":true,"bstack:options":{"projectName":"Appium WDIO Framework","buildName":"Android Automation Build","sessionName":"Add Note Test","appiumVersion":"2.0.0","deviceOrientation":"portrait","networkLogs":true,"debug":true,"local":false,"wdioService":"9.19.2","testhubBuildUuid":"rwu9mzqvoanm01tbfdk4zlbgxdp8up45qdofs0h1","buildProductMap":{"observability":true,"accessibility":null,"percy":false,"automate":true,"app_automate":false}}}
+[90m2025-10-24T23:19:41.388Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Got platformVersion from driver caps
+[90m2025-10-24T23:19:41.388Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 1
+[90m2025-10-24T23:19:41.941Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 2
+[90m2025-10-24T23:19:42.046Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 3
+[90m2025-10-24T23:19:43.169Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 4
+[90m2025-10-24T23:19:43.225Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 5
+[90m2025-10-24T23:19:43.227Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Accessibility after test hook. Before sending test stop event
+[90m2025-10-24T23:19:43.228Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Driver capabilities used for integration object: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","goog:chromeOptions":{},"newCommandTimeout":0,"deviceName":"google pixel 6","chromedriverPorts":[[18100,18110]],"automationName":"uiautomator2","autoGrantPermissions":true,"bundleID":"com.socialnmobile.dictapps.notepad.color.note","bundleId":"com.socialnmobile.dictapps.notepad.color.note","skipServerInstallation":true,"udid":"26131FDF6007AM","appPackage":"com.socialnmobile.dictapps.notepad.color.note","appActivity":"com.socialnmobile.colornote.activity.Main","nativeWebScreenshot":true,"disableSuppressAccessibilityService":true,"platformVersion":"12.0","systemPort":8200,"chromedriverPort":18080,"chromedriverExecutable":"/usr/local/.browserstack/deps/chromedriver/v139.0.7258.154/chromedriver","suppressKillServer":true},"platformName":"Android","goog:chromeOptions":{},"newCommandTimeout":0,"deviceName":"26131FDF6007AM","chromedriverPorts":[[18100,18110]],"automationName":"uiautomator2","autoGrantPermissions":true,"bundleID":"com.socialnmobile.dictapps.notepad.color.note","bundleId":"com.socialnmobile.dictapps.notepad.color.note","skipServerInstallation":true,"udid":"26131FDF6007AM","appPackage":"com.socialnmobile.dictapps.notepad.color.note","appActivity":"com.socialnmobile.colornote.activity.Main","nativeWebScreenshot":true,"disableSuppressAccessibilityService":true,"platformVersion":"12","systemPort":8200,"chromedriverPort":18080,"chromedriverExecutable":"/usr/local/.browserstack/deps/chromedriver/v139.0.7258.154/chromedriver","suppressKillServer":true,"deviceUDID":"26131FDF6007AM","deviceApiLevel":31,"deviceScreenSize":"1080x2400","deviceScreenDensity":420,"deviceModel":"Pixel 6","deviceManufacturer":"Google","pixelRatio":2.625,"statBarHeight":124,"viewportRect":{"left":0,"top":124,"width":1080,"height":2116}}
+[90m2025-10-24T23:19:43.228Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m User capabilities used for integration object: {"platformName":"Android","appium:platformVersion":"12.0","appium:deviceName":"Google Pixel 6","appium:automationName":"UIAutomator2","appium:app":"bs://9605c7e00c359dc03b21e58accccb9929060ab98","appium:autoGrantPermissions":true,"bstack:options":{"projectName":"Appium WDIO Framework","buildName":"Android Automation Build","sessionName":"Add Note Test","appiumVersion":"2.0.0","deviceOrientation":"portrait","networkLogs":true,"debug":true,"local":false,"wdioService":"9.19.2","testhubBuildUuid":"rwu9mzqvoanm01tbfdk4zlbgxdp8up45qdofs0h1","buildProductMap":{"observability":true,"accessibility":null,"percy":false,"automate":true,"app_automate":false}}}
+[90m2025-10-24T23:19:43.228Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Got platformVersion from driver caps
+[90m2025-10-24T23:19:43.228Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 6
+[90m2025-10-24T23:19:43.229Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Update job with sessionId b43c1f003cef726bf605637be3386f02e41a0615
+[90m2025-10-24T23:19:43.229Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Updating Browserstack session at https://api-cloud.browserstack.com/app-automate/sessions/b43c1f003cef726bf605637be3386f02e41a0615.json with request body: 
+[90m2025-10-24T23:19:43.390Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending data from request queue. Data length = 6, Queue length after removal = 0
+[90m2025-10-24T23:19:43.391Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m calling callback with kind INTERVAL_QUEUE
+[90m2025-10-24T23:19:43.391Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m callback: called with events 6
+[90m2025-10-24T23:19:43.479Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Driver capabilities used for integration object: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","goog:chromeOptions":{},"newCommandTimeout":0,"deviceName":"google pixel 6","chromedriverPorts":[[18100,18110]],"automationName":"uiautomator2","autoGrantPermissions":true,"bundleID":"com.socialnmobile.dictapps.notepad.color.note","bundleId":"com.socialnmobile.dictapps.notepad.color.note","skipServerInstallation":true,"udid":"26131FDF6007AM","appPackage":"com.socialnmobile.dictapps.notepad.color.note","appActivity":"com.socialnmobile.colornote.activity.Main","nativeWebScreenshot":true,"disableSuppressAccessibilityService":true,"platformVersion":"12.0","systemPort":8200,"chromedriverPort":18080,"chromedriverExecutable":"/usr/local/.browserstack/deps/chromedriver/v139.0.7258.154/chromedriver","suppressKillServer":true},"platformName":"Android","goog:chromeOptions":{},"newCommandTimeout":0,"deviceName":"26131FDF6007AM","chromedriverPorts":[[18100,18110]],"automationName":"uiautomator2","autoGrantPermissions":true,"bundleID":"com.socialnmobile.dictapps.notepad.color.note","bundleId":"com.socialnmobile.dictapps.notepad.color.note","skipServerInstallation":true,"udid":"26131FDF6007AM","appPackage":"com.socialnmobile.dictapps.notepad.color.note","appActivity":"com.socialnmobile.colornote.activity.Main","nativeWebScreenshot":true,"disableSuppressAccessibilityService":true,"platformVersion":"12","systemPort":8200,"chromedriverPort":18080,"chromedriverExecutable":"/usr/local/.browserstack/deps/chromedriver/v139.0.7258.154/chromedriver","suppressKillServer":true,"deviceUDID":"26131FDF6007AM","deviceApiLevel":31,"deviceScreenSize":"1080x2400","deviceScreenDensity":420,"deviceModel":"Pixel 6","deviceManufacturer":"Google","pixelRatio":2.625,"statBarHeight":124,"viewportRect":{"left":0,"top":124,"width":1080,"height":2116}}
+[90m2025-10-24T23:19:43.479Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m User capabilities used for integration object: {"platformName":"Android","appium:platformVersion":"12.0","appium:deviceName":"Google Pixel 6","appium:automationName":"UIAutomator2","appium:app":"bs://9605c7e00c359dc03b21e58accccb9929060ab98","appium:autoGrantPermissions":true,"bstack:options":{"projectName":"Appium WDIO Framework","buildName":"Android Automation Build","sessionName":"Add Note Test","appiumVersion":"2.0.0","deviceOrientation":"portrait","networkLogs":true,"debug":true,"local":false,"wdioService":"9.19.2","testhubBuildUuid":"rwu9mzqvoanm01tbfdk4zlbgxdp8up45qdofs0h1","buildProductMap":{"observability":true,"accessibility":null,"percy":false,"automate":true,"app_automate":false}}}
+[90m2025-10-24T23:19:43.479Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Got platformVersion from driver caps
+[90m2025-10-24T23:19:43.479Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 1
+[90m2025-10-24T23:19:43.627Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 2
+[90m2025-10-24T23:19:43.737Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 3
+[90m2025-10-24T23:19:43.750Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m [BATCH_DATA] Success response: {"success":true}
+[90m2025-10-24T23:19:43.750Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m callback: marking events success 6
+[90m2025-10-24T23:19:44.435Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 4
+[90m2025-10-24T23:19:45.391Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending data from request queue. Data length = 4, Queue length after removal = 0
+[90m2025-10-24T23:19:45.392Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m calling callback with kind INTERVAL_QUEUE
+[90m2025-10-24T23:19:45.392Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m callback: called with events 4
+[90m2025-10-24T23:19:45.511Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m [BATCH_DATA] Success response: {"success":true}
+[90m2025-10-24T23:19:45.511Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m callback: marking events success 4
+[90m2025-10-24T23:19:45.843Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 1
+[90m2025-10-24T23:19:46.011Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 2
+[90m2025-10-24T23:19:46.093Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 3
+[90m2025-10-24T23:19:46.201Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 4
+[90m2025-10-24T23:19:46.272Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 5
+[90m2025-10-24T23:19:46.898Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 6
+[90m2025-10-24T23:19:46.973Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 7
+[90m2025-10-24T23:19:47.393Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending data from request queue. Data length = 7, Queue length after removal = 0
+[90m2025-10-24T23:19:47.393Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m calling callback with kind INTERVAL_QUEUE
+[90m2025-10-24T23:19:47.393Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m callback: called with events 7
+[90m2025-10-24T23:19:47.504Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m [BATCH_DATA] Success response: {"success":true}
+[90m2025-10-24T23:19:47.504Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m callback: marking events success 7
+[90m2025-10-24T23:19:47.630Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 1
+[90m2025-10-24T23:19:48.393Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 2
+[90m2025-10-24T23:19:49.108Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 3
+[90m2025-10-24T23:19:49.171Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 4
+[90m2025-10-24T23:19:49.301Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 5
+[90m2025-10-24T23:19:49.356Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 6
+[90m2025-10-24T23:19:49.358Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Accessibility after test hook. Before sending test stop event
+[90m2025-10-24T23:19:49.358Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Driver capabilities used for integration object: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","goog:chromeOptions":{},"newCommandTimeout":0,"deviceName":"google pixel 6","chromedriverPorts":[[18100,18110]],"automationName":"uiautomator2","autoGrantPermissions":true,"bundleID":"com.socialnmobile.dictapps.notepad.color.note","bundleId":"com.socialnmobile.dictapps.notepad.color.note","skipServerInstallation":true,"udid":"26131FDF6007AM","appPackage":"com.socialnmobile.dictapps.notepad.color.note","appActivity":"com.socialnmobile.colornote.activity.Main","nativeWebScreenshot":true,"disableSuppressAccessibilityService":true,"platformVersion":"12.0","systemPort":8200,"chromedriverPort":18080,"chromedriverExecutable":"/usr/local/.browserstack/deps/chromedriver/v139.0.7258.154/chromedriver","suppressKillServer":true},"platformName":"Android","goog:chromeOptions":{},"newCommandTimeout":0,"deviceName":"26131FDF6007AM","chromedriverPorts":[[18100,18110]],"automationName":"uiautomator2","autoGrantPermissions":true,"bundleID":"com.socialnmobile.dictapps.notepad.color.note","bundleId":"com.socialnmobile.dictapps.notepad.color.note","skipServerInstallation":true,"udid":"26131FDF6007AM","appPackage":"com.socialnmobile.dictapps.notepad.color.note","appActivity":"com.socialnmobile.colornote.activity.Main","nativeWebScreenshot":true,"disableSuppressAccessibilityService":true,"platformVersion":"12","systemPort":8200,"chromedriverPort":18080,"chromedriverExecutable":"/usr/local/.browserstack/deps/chromedriver/v139.0.7258.154/chromedriver","suppressKillServer":true,"deviceUDID":"26131FDF6007AM","deviceApiLevel":31,"deviceScreenSize":"1080x2400","deviceScreenDensity":420,"deviceModel":"Pixel 6","deviceManufacturer":"Google","pixelRatio":2.625,"statBarHeight":124,"viewportRect":{"left":0,"top":124,"width":1080,"height":2116}}
+[90m2025-10-24T23:19:49.358Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m User capabilities used for integration object: {"platformName":"Android","appium:platformVersion":"12.0","appium:deviceName":"Google Pixel 6","appium:automationName":"UIAutomator2","appium:app":"bs://9605c7e00c359dc03b21e58accccb9929060ab98","appium:autoGrantPermissions":true,"bstack:options":{"projectName":"Appium WDIO Framework","buildName":"Android Automation Build","sessionName":"Add Note Test","appiumVersion":"2.0.0","deviceOrientation":"portrait","networkLogs":true,"debug":true,"local":false,"wdioService":"9.19.2","testhubBuildUuid":"rwu9mzqvoanm01tbfdk4zlbgxdp8up45qdofs0h1","buildProductMap":{"observability":true,"accessibility":null,"percy":false,"automate":true,"app_automate":false}}}
+[90m2025-10-24T23:19:49.358Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Got platformVersion from driver caps
+[90m2025-10-24T23:19:49.358Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 7
+[90m2025-10-24T23:19:49.360Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Update job with sessionId b43c1f003cef726bf605637be3386f02e41a0615
+[90m2025-10-24T23:19:49.360Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Updating Browserstack session at https://api-cloud.browserstack.com/app-automate/sessions/b43c1f003cef726bf605637be3386f02e41a0615.json with request body: 
+[90m2025-10-24T23:19:49.393Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending data from request queue. Data length = 7, Queue length after removal = 0
+[90m2025-10-24T23:19:49.393Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m calling callback with kind INTERVAL_QUEUE
+[90m2025-10-24T23:19:49.393Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m callback: called with events 7
+[90m2025-10-24T23:19:49.537Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m [BATCH_DATA] Success response: {"success":true}
+[90m2025-10-24T23:19:49.537Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m callback: marking events success 7
+[90m2025-10-24T23:19:49.706Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown started
+[90m2025-10-24T23:19:49.706Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m shutdown started
+[90m2025-10-24T23:19:49.706Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Shutting down request queue
+[90m2025-10-24T23:19:49.706Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m shutdown ended
+[90m2025-10-24T23:19:49.706Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown ended
+[90m2025-10-24T23:19:50.515Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Added data to request queue. Queue length = 1
+[90m2025-10-24T23:19:50.515Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Force request-queue shutdown, as test run event is received after teardown
+[90m2025-10-24T23:19:50.515Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending data from request queue. Data length = 1, Queue length after removal = 0
+[90m2025-10-24T23:19:50.515Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m calling callback with kind INTERVAL_QUEUE
+[90m2025-10-24T23:19:50.515Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m callback: called with events 1
+[90m2025-10-24T23:19:50.894Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Inside OnComplete hook..
+[90m2025-10-24T23:19:50.894Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending stop launch event
+[90m2025-10-24T23:19:51.178Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m [STOP_BUILD] Success response: 
+[90m2025-10-24T23:19:51.180Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m BrowserStack service run ended for id: 413c878f-f7db-4246-9d30-94088c5531b8 testhub id: rwu9mzqvoanm01tbfdk4zlbgxdp8up45qdofs0h1
+[90m2025-10-24T23:19:51.181Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Reading worker file worker-data-10007.json
+[90m2025-10-24T23:19:51.182Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending SDK event with data {
+  userName: '[REDACTED]',
+  accessKey: '[REDACTED]',
+  event_type: 'SDKTestSuccessful',
+  detectedFramework: 'WebdriverIO-mocha',
+  event_properties: {
+    sdkRunId: '413c878f-f7db-4246-9d30-94088c5531b8',
+    testhub_uuid: 'rwu9mzqvoanm01tbfdk4zlbgxdp8up45qdofs0h1',
+    language_framework: 'WebdriverIO_mocha',
+    referrer: 'WebdriverIO-mocha/9.19.2',
+    language: 'WebdriverIO',
+    languageVersion: 'v24.3.0',
+    buildName: 'Android Automation Build',
+    buildIdentifier: 'undefined',
+    os: 'Darwin',
+    hostname: 'Yehors-MacBook-Pro.local',
+    productMap: {
+      observability: true,
+      accessibility: null,
+      percy: false,
+      automate: true,
+      app_automate: false
+    },
+    product: [ 'observability', 'automate' ],
+    framework: 'mocha',
+    productUsage: {
+      testObservability: {
+        enabled: true,
+        manuallySet: false,
+        buildHashedId: 'rwu9mzqvoanm01tbfdk4zlbgxdp8up45qdofs0h1',
+        events: {
+          buildEvents: {
+            started: { isTriggered: true, status: 'success', error: undefined },
+            finished: { isTriggered: true, status: 'success', error: undefined }
+          },
+          testEvents: {
+            started: { triggeredCount: 2, sentCount: 2, failedCount: 0 },
+            finished: { triggeredCount: 2, sentCount: 2, failedCount: 0 },
+            passed: { triggeredCount: 2, sentCount: 2, failedCount: 0 }
+          },
+          hookEvents: {
+            started: { triggeredCount: 0, sentCount: 0, failedCount: 0 },
+            finished: { triggeredCount: 0, sentCount: 0, failedCount: 0 }
+          },
+          logEvents: {
+            triggeredCount: 20,
+            sentCount: 20,
+            failedCount: 0,
+            http: { triggeredCount: 20, sentCount: 20, failedCount: 0 }
+          },
+          cbtSessionEvents: { triggeredCount: 0, sentCount: 0, failedCount: 0 }
+        }
+      }
+    }
+  }
+}
+[90m2025-10-24T23:19:51.384Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Funnel Event Response: "{\"message\":\"SDK Event recorded successfully\"}"
+[90m2025-10-24T23:19:51.384Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Funnel event success
+[90m2025-10-24T23:19:51.821Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Upload response: {
+  "status": "failed",
+  "message": "File not attached. Visit https://www.browserstack.com/docs/test-observability/quick-start/junit-reports for more details."
+}
+[90m2025-10-24T23:19:52.375Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Successfully uploaded performance events Bravo

@@ -5,14 +5,12 @@ const { config } = require('./wdio.shared.conf');
 // ====================
 //
 config.port = 4723;
-//
 // ============
 // Specs
 // ============
 config.specs = [
     path.join(process.cwd(), './test/specs/android/add-note-screen.spec.js')
 ];
-//
 // ============
 // Capabilities
 // ============
@@ -26,7 +24,6 @@ config.capabilities = [
         'appium:autoGrantPermissions': true,
     }
 ]
-//
 // Test runner services
 // Services take over a specific job you don't want to take care of. They enhance
 // your test setup with almost no effort. Unlike plugins, they don't add new
