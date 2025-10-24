@@ -1,5 +1,4 @@
 exports.config = {
-    //
     // ==================
     // Specify Test Files
     // ==================
@@ -73,17 +72,13 @@ exports.config = {
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
     baseUrl: 'http://localhost',
-    //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
-    //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
     connectionRetryTimeout: 120000,
-    //
     // Default request retries count
     connectionRetryCount: 3,
-
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
@@ -91,7 +86,6 @@ exports.config = {
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
     framework: 'mocha',
-    //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
     //
@@ -105,14 +99,12 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec'],
-    //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000
     },
-    //
     // =====
     // Hooks
     // =====
