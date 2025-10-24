@@ -1,4 +1,13 @@
+require('dotenv').config();
+const path = require('path');
 const { config } = require('./wdio.shared.conf');
+
+//
+// ============
+// BrowserStack Credentials
+// ============
+config.user = process.env.BROWSERSTACK_USER;
+config.key = process.env.BROWSERSTACK_KEY;
 
 config.specs = [
     path.join(process.cwd(), './test/specs/android/add-note-screen.spec.js')
