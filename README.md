@@ -18,6 +18,16 @@ It’s designed for scalability, modularity, and clean architecture following th
 - ✅ Uses **Mocha** test framework
 - 🧪 Ready for integration with **Jenkins**, **GitHub Actions**, and **GitLab CI**
 - 📊 Automatic log uploads for failed runs in GitHub Actions
+- 🧾 **Allure Reports** — automatically generated detailed test reports with steps, screenshots, and logs
+
+---
+
+## 📸 Reporting
+
+The framework integrates **Allure Reporter** for rich HTML reports:
+
+- Each test includes step-by-step logs and screenshots on failure  
+- Reports are automatically generated at the end of the run (`/allure-report`)
 
 ---
 
