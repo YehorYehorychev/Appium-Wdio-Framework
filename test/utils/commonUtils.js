@@ -79,5 +79,92 @@ export const Utils = {
      */
     async sleep(seconds) {
         await driver.pause(seconds * 1000);
+    },
+
+    /**
+     * Verify text equals
+     */
+    async expectTextEquals(element, expectedText) {
+        const actual = await this.getText(element);
+        expect(actual).toEqual(expectedText);
+    },
+
+    /**
+     * Verify element is displayed
+     */
+    async expectVisible(element) {
+        expect(await element.isDisplayed()).toBe(true);
+    },
+
+    /**
+     * Verify element not displayed
+     */
+    async expectNotVisible(element) {
+        expect(await element.isDisplayed()).toBe(false);
+    },
+
+    /**
+     * Capture screenshot with timestamp
+     */
+    async takeScreenshot(name = 'screenshot') {
+        const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+        await driver.saveScreenshot(`./logs/${name}_${timestamp}.png`);
+    },
+
+    /**
+     * Generate random string
+     */
+    randomString(length = 6) {
+        const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+        return Array.from({ length }, () => chars[Math.floor(Math.random() * chars.length)]).join('');
+    },
+
+    /**
+     * Generate random email
+     */
+    randomEmail() {
+        return `user_${this.randomString(5)}@test.com`;
+    },
+
+    /**
+     * Scroll to top (mobile)
+     */
+    async scrollToTop() {
+        await driver.execute('mobile: scrollGesture', {
+            left: 100, top: 500, width: 400, height: 800,
+            direction: 'up', percent: 3.0
+        });
+    },
+
+    /**
+     * Tap back button (Android only)
+     */
+    async pressBack() {
+        await driver.back();
+    },
+
+    /**
+     * Wait until element disappears
+     */
+    async waitForInvisible(element, timeout = 10000) {
+        await element.waitForDisplayed({ timeout, reverse: true });
+    },
+
+    /**
+     * Check if element exists (without error)
+     */
+    async exists(element) {
+        try {
+            return await element.isDisplayed();
+        } catch {
+            return false;
+        }
+    },
+
+    /**
+     * Print console divider (useful for debugging)
+     */
+    logDivider(label = '') {
+        console.log(`\n========== ${label} ==========\n`);
     }
 };
