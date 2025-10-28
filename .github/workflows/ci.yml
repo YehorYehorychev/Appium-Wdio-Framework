@@ -19,6 +19,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Allure CLI
+        run: npm install -g allure-commandline --save-dev
+
       - name: Run WDIO Android test on BrowserStack
         env:
           BROWSERSTACK_USER: ${{ secrets.BS_USER }}
