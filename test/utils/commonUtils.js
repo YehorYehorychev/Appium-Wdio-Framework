@@ -162,6 +162,107 @@ export const Utils = {
     },
 
     /**
+     * Hide keyboard (for mobile)
+    */
+    async hideKeyboard() {
+        try {
+            await driver.hideKeyboard();
+        } catch (e) {
+            console.warn('Keyboard not visible');
+        }
+    },
+
+    /**
+     * Get device platform (android / ios)
+     */
+    async getPlatformName() {
+        return (await driver.capabilities.platformName).toLowerCase();
+    },
+
+    /**
+     * Get device info (name + OS version)
+     */
+    async getDeviceInfo() {
+        const { deviceName, platformVersion, platformName } = driver.capabilities;
+        return `${deviceName} (${platformName} ${platformVersion})`;
+    },
+
+    /**
+     * Rotate screen to portrait / landscape
+     */
+    async setOrientation(orientation = 'PORTRAIT') {
+        await driver.setOrientation(orientation.toUpperCase());
+    },
+
+    /**
+     * Check current screen orientation
+     */
+    async getOrientation() {
+        return await driver.getOrientation();
+    },
+
+    /**
+     * Launch or close app
+     */
+    async relaunchApp() {
+        await driver.closeApp();
+        await driver.launchApp();
+    },
+
+    /**
+     * Get current activity (Android only)
+     */
+    async getCurrentActivity() {
+        if ((await this.getPlatformName()) === 'android') {
+            return await driver.getCurrentActivity();
+        }
+        return null;
+    },
+
+    /**
+     * Simulate pull to refresh gesture
+     */
+    async pullToRefresh() {
+        const { width, height } = await driver.getWindowRect();
+        const startY = height * 0.3;
+        const endY = height * 0.8;
+        const x = width / 2;
+
+        await driver.touchPerform([
+            { action: 'press', options: { x, y: startY } },
+            { action: 'wait', options: { ms: 600 } },
+            { action: 'moveTo', options: { x, y: endY } },
+            { action: 'release' }
+        ]);
+    },
+
+    /**
+     * Clear app data (Android only)
+     */
+    async clearAppData() {
+        if ((await this.getPlatformName()) === 'android') {
+            await driver.execute('mobile: shell', {
+                command: 'pm clear ' + driver.capabilities.appPackage
+            });
+        } else {
+            console.warn('clearAppData() is Android-only');
+        }
+    },
+
+    /**
+     * Print device logs to console (useful for debugging)
+     */
+    async printDeviceLogs(type = 'logcat', lines = 10) {
+        try {
+            const logs = await driver.getLogs(type);
+            console.log(`\n--- Last ${lines} ${type} logs ---`);
+            logs.slice(-lines).forEach((l) => console.log(`[${l.timestamp}] ${l.message}`));
+        } catch (e) {
+            console.warn('Device logs not available on this platform');
+        }
+    },
+
+    /**
      * Print console divider (useful for debugging)
      */
     logDivider(label = '') {
