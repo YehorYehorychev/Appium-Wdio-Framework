@@ -56,7 +56,7 @@ To run tests through **GitHub Actions**, you need to add your BrowserStack crede
    ```yaml
    BROWSERSTACK_USER: ${{ secrets.BS_USER }}
    BROWSERSTACK_KEY: ${{ secrets.BS_KEY }}
-
+   ```
 ---
 
 ## 🗂️ Project Structure
@@ -133,6 +133,8 @@ This project uses ESLint v9 with the official WDIO plugin to enforce best practi
 - Installs dependencies
 - Runs Android WDIO tests on BrowserStack
 - Uploads logs as artifacts on failure
+
+![BrowserStack Run](https://github.com/user-attachments/assets/fc943079-8cfb-49ae-b6d4-513c2a5da0db)
 
 ### 🧩 Example workflow: `.github/workflows/ci.yml`
 ```
